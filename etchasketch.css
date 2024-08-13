@@ -1,7 +1,12 @@
 .grid-child{
-    border: 1px solid black;
+    border: 1px solid crimson;
     width: 25px;
     height: 25px;
+    background-color: currentColor;
+}
+
+.grid-child:hover{
+    background-color: mediumvioletred;
 }
 
 #container{

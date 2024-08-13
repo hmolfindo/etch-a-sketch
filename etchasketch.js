@@ -9,3 +9,11 @@ function initializeGrid(items){
 };
 
 initializeGrid(256);
+
+const childrenArray = document.querySelectorAll(".grid-child");
+
+childrenArray.forEach(function(child){
+    child.addEventListener('mouseout', function(){
+        child.style.backgroundColor = "mediumvioletred";
+    })
+});
