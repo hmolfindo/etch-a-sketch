@@ -6,11 +6,14 @@ function initializeGrid(items){
     for (i = 0; i < itemsSquared; i++){
         let child = document.createElement("div");
         console.log(i);
-        child.style.width = ((720/items)-2) + "px";
-        child.style.height = ((720/items)-2) + "px";
+        child.style.width = (720/items) + "px";
+        child.style.height = (720/items) + "px";
         container.appendChild(child).className = "grid-child"; //Fills container with squares
+        let opacity = child.style.opacity
         child.addEventListener('mouseover', () => { //Randomize color on hover
+            let opacity = parseFloat(child.style.opacity);
             child.style.backgroundColor = getRandomColor();
+            child.style.opacity = opacity - 0.1;
         });
     }
 };

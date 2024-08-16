@@ -17,13 +17,10 @@ button:hover{
 }
 
 .grid-child{
-    border: 1px solid cornsilk;
     background-color: wheat;
 }
 
 #container{
-    border-width: 5px;
-    border-color: black;
     margin-top: 32px;
     display: flex;
     flex-wrap: wrap;
