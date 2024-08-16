@@ -32,7 +32,7 @@ function getRandomColor(){
 };
 
 
-//Button for changing sketchpad dimensions
+//Change sketchpad button
 const button = document.getElementById("changeSP");
 
 button.addEventListener("click", () => {
@@ -47,6 +47,7 @@ button.addEventListener("click", () => {
     }
 });
 
+//Clear button
 const clearBtn = document.getElementById("clear");
 const gridItems = document.getElementsByClassName("grid-child");
 
