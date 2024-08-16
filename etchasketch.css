@@ -10,6 +10,8 @@ button{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     background-color: hsla(360, 21%, 91%, 1);
+    border-radius: 8px;
+    text-align: center;
 }
 
 button:hover{
@@ -21,13 +23,14 @@ button:hover{
 }
 
 #container{
-    margin-top: 32px;
+    border: solid #228bf4;
+    border-width: 32px;
+    border-radius: 48px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 720px;
     height: 720px;
-    box-shadow: 3px solid black;
 }
 
 /*#container>div:nth-child(16n){
