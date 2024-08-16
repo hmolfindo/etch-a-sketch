@@ -47,5 +47,14 @@ button.addEventListener("click", () => {
     }
 });
 
+const clearBtn = document.getElementById("clear");
+const gridItems = document.getElementsByClassName("grid-child");
+
+clearBtn.addEventListener("click", () => {
+    console.log("peepo");
+    Array.from(gridItems).forEach((child) => {
+        child.style.backgroundColor = "wheat";
+    });
+});
 
 
