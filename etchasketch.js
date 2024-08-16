@@ -9,7 +9,7 @@ function initializeGrid(items){
         child.style.width = ((720/items)-2) + "px";
         child.style.height = ((720/items)-2) + "px";
         container.appendChild(child).className = "grid-child"; //Fills container with squares
-        child.addEventListener('mouseover', function(){ //Randomize color on hover
+        child.addEventListener('mouseover', () => { //Randomize color on hover
             child.style.backgroundColor = getRandomColor();
         });
     }
@@ -40,6 +40,9 @@ button.addEventListener("click", () => {
         initializeGrid(input);
         console.log("success");
     }else{
-        alert("Exceeded max capacity for squares.");
+        alert("Exceeded maximum capacity for squares.");
     }
 });
+
+
+
